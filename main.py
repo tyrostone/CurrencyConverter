@@ -1,4 +1,4 @@
-from currency import CurrencyConverter
+from currency.currency import CurrencyConverter
 
 
 def get_user_inputs():
