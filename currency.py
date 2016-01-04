@@ -119,8 +119,9 @@ class CurrencyConverter(object):
 
     def _parse_rates(self, rates):
         for key, value in rates.items():
-            if str(key) == self.currency_codes[1]:
+            if len(self.currency_codes) == 2 and str(key) == self.currency_codes[1]:
                 return value
+        raise ValueError("Unable to locate country in conversion rates list")
 
     @property
     def currency_codes(self):
