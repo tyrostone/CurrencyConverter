@@ -13,7 +13,7 @@ def run_conversion():
     c = CurrencyConverter(from_country, to_country, amount)
     conversion = c.convert()
     print "{} moneys in {} converts to {} moneys in {}".format(
-        amount, from_country, str(conversion), to_country)
+        amount, from_country, conversion, to_country)
 
 
 def check_continue():
