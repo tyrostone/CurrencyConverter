@@ -96,7 +96,7 @@ class CurrencyConverter(object):
 
         """
         url, params = self._create_api_url(CurrencyConverter.API_KEY,
-                                           api_type='conversion')
+                                           api_url='conversion')
         print url, params
         rates = self._maybe_get_rates(url, params)
         rate = self._parse_rates(rates)
